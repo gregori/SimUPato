@@ -33,4 +33,12 @@ public abstract class Pato {
     public void nadar() {
         System.out.println("Todos os patos nadam, mesmo os falsos, de madeira!");
     }
+    
+    public void setComportamentoDeVoo(ComportamentoDeVoo cv) {
+        comportamentoDeVoo = cv;
+    }
+    
+    public void setComportamentoDeGrasnado(ComportamentoDeGrasnado cg) {
+        comportamentoDeGrasnado = cg;
+    }
 }

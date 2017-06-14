@@ -6,7 +6,9 @@
 package simupato;
 
 import simupato.patos.Pato;
+import simupato.patos.PatoModelo;
 import simupato.patos.PatoSelvagem;
+import simupato.voo.VoarComFoguete;
 
 /**
  *
@@ -21,6 +23,11 @@ public class SimUPato {
         Pato selvagem = new PatoSelvagem();
         selvagem.emitirGrasnado();
         selvagem.executarVoo();
+        
+        Pato modelo = new PatoModelo();
+        modelo.executarVoo();
+        modelo.setComportamentoDeVoo(new VoarComFoguete());
+        modelo.executarVoo();
     }
     
 }
